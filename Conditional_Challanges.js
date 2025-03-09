@@ -40,4 +40,27 @@ function checkVotingEligibility(age) {
   }
 
 }
-checkVotingEligibility({"age":20})
+console.log(checkVotingEligibility({"age":20}));
+
+
+// CHALLANGE 4 CONDITIONAL STATEMENT
+
+// You just need to implement the calculateGrade function
+
+function calculateGrade(marks) {
+  // Return grade based on the marks
+  if(marks >= 90){
+    return "A"
+  }else if(marks<90 && marks>=80){
+    return "B"
+  }else if(marks<80 && marks>=70){
+    return "C"
+  }else if(marks<70 && marks>=60){
+    return "D"
+  }else if(marks<60){
+    return "F"
+  }
+}
+
+console.log(calculateGrade({"marks":85}));
+
