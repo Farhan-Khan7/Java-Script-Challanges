@@ -77,3 +77,23 @@ function isLeapYear(year) {
   }
 }
 console.log(isLeapYear({"year":1900}));
+
+// CHALLANGE 6 CONDITIONAL STATEMENT
+
+// You just need to implement the trafficLightAction function
+
+function trafficLightAction(color) {
+  // Return "Stop", "Slow Down", or "Go" based on the traffic light color
+  switch (color) {
+        case "Red":
+            return "Stop";
+        case "Yellow":
+            return "Slow Down";
+        case "Green":
+            return "Go";
+        case "Blue":
+            return "Invalid color";
+    }
+
+}
+console.log(trafficLightAction({"color":"Red"}));
