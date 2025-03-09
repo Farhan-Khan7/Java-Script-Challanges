@@ -97,3 +97,49 @@ function trafficLightAction(color) {
 
 }
 console.log(trafficLightAction({"color":"Red"}));
+
+
+// CHALLANGE 7TH CONDITIONAL STATEMENT
+
+// You just need to implement the getDayOfWeek function
+function getDayOfWeek(day) {
+  // Return the corresponding day of the week based on the input number
+
+  switch(day){
+
+    case 1 : return "Monday";
+    
+    case 2 : return "Tuesday";
+    
+    case 3 : return "Wednesday";
+    
+    case 4 : return "Thusday";
+    
+    case 5 : return "Friday";
+    
+    case 6 : return "Saturday";
+    
+    case 7 : return "Sunday";
+    
+    default: return "Invalid day";
+  }
+}
+
+console.log(getDayOfWeek(5));
+
+
+// CHALLANGE 8TH CONDITIONAL STATEMENT
+
+// You just need to implement the checkNumberType function
+function checkNumberType(num) {
+  // Return "Positive", "Negative", or "Zero" based on the input number
+
+  if(num > 0){
+    return "Positive"
+  }else if (num < 0){
+    return "Negative"
+  }else if(num === 0){
+    return "Zero"
+  }
+}
+console.log(checkEvenOdd(5))
