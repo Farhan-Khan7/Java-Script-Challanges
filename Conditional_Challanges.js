@@ -135,20 +135,58 @@
 
 
 
-function checkNumberType() {
-  // Return "Positive", "Negative", or "Zero" based on the input number
-  let num = prompt("Enter Number : ")
+// function checkNumberType() {
+//   // Return "Positive", "Negative", or "Zero" based on the input number
+//   let num = prompt("Enter Number : ")
 
-  if(num > 0 ){
-    return "Positive"
-  }else if(num < 0){
-    return "Negative"
-  }else if(num == 0){
-    return "Number Is Zero"
-  }else{
-    return "Not a Number"
+//   if(num > 0 ){
+//     return "Positive"
+//   }else if(num < 0){
+//     return "Negative"
+//   }else if(num == 0){
+//     return "Number Is Zero"
+//   }else{
+//     return "Not a Number"
+//   }
+// }
+
+// let result = alert(checkNumberType())
+// console.log(result)
+
+
+function calculator() {
+  let num1 = Number(prompt("Enter first number:"));
+  let num2 = Number(prompt("Enter second number:"));
+  let operator = prompt("Enter operator (+, -, *, /):");
+  let result;
+
+  switch (operator) {
+    case '+':
+      result = num1 + num2;
+      break;
+
+    case '-':
+      result = num1 - num2;
+      break;
+
+    case '*':
+      result = num1 * num2;
+      break;
+
+    case '/':
+      if (num2 === 0) {
+        alert("Cannot divide by zero");
+        return;
+      }
+      result = num1 / num2;
+      break;
+
+    default:
+      alert("Invalid operator");
+      return;
   }
+
 }
 
-let result = alert(checkNumberType())
+let result = alert(calculator());
 console.log(result)
