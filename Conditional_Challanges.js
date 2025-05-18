@@ -1,12 +1,15 @@
 function checkEvenOdd(num){
-  if(num % 2 == 0){
+  if(num % 2 === 0){
     return "Even";
   }else{
     return "Odd"
   }
 
 }
-console.log(checkEvenOdd("0"))
+// console.log(prompt(checkEvenOdd()))
+
+console.alert(checkEvenOdd())
+// console.log(user)
 
 
 // function findLargest(a, b, c) {
