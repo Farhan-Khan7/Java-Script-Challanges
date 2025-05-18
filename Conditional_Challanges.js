@@ -6,7 +6,7 @@ function checkEvenOdd(num){
   }
 
 }
-console.log(checkEvenOdd(0))
+console.log(checkEvenOdd("0"))
 
 
 // function findLargest(a, b, c) {
