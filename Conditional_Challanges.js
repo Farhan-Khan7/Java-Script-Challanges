@@ -45,23 +45,41 @@
   // console.log(result)
 
   
-  function calculateGrade() {
-    // Return grade based on the marks
-    let marks = prompt("Enter Your Marks")
+//   function calculateGrade() {
+//     // Return grade based on the marks
+//     let marks = prompt("Enter Your Marks")
 
-    if(marks >= 90){
-      return "Grade A"
-    }else if(marks >= 80 && marks < 89){
-      return "Grade B"
-    }else if(marks >= 70 && marks < 79){
-      return "Grade C"
-    }else if(marks >= 60 && marks < 69){
-      return "Grade D"
-    }else{
-      return "Grade F"
-    }
+//     if(marks >= 90){
+//       return "Grade A"
+//     }else if(marks >= 80 && marks < 89){
+//       return "Grade B"
+//     }else if(marks >= 70 && marks < 79){
+//       return "Grade C"
+//     }else if(marks >= 60 && marks < 69){
+//       return "Grade D"
+//     }else{
+//       return "Grade F"
+//     }
 
-  }
+//   }
 
-let result = alert(calculateGrade())
-console.log(result)
+// let result = alert(calculateGrade())
+// console.log(result)
+
+
+// function isLeapYear() {
+//   // Return "Leap Year" if the year is a leap year, otherwise return "Not a Leap Year"
+
+//   let year = prompt("Enter a Year : ")
+
+// if((year%4 === 0 && year/100 !== 0 ) || year%400 === 0){
+//   return `Leap Year = ${year}`
+// }else{
+//   return `Not a Leap Year = ${year}`
+// }
+// }
+
+// let result = alert(isLeapYear())
+// console.log(isLeapYear)
+
+
