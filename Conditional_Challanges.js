@@ -31,20 +31,20 @@
 // console.log(result)
 
 
-  // function checkVotingEligibility() {
-  //   // Return "Eligible" if age is 18 or more, otherwise return "Not Eligible"
-  //   let age = prompt("Enter Your Age : ")
-  //   if(age >= 18){
-  //     return "Eligible"
-  //   }else{
-  //     return "Not Eligible"
-  //   }
+// function checkVotingEligibility() {
+//   // Return "Eligible" if age is 18 or more, otherwise return "Not Eligible"
+//   let age = prompt("Enter Your Age : ")
+//   if(age >= 18){
+//     return "Eligible"
+//   }else{
+//     return "Not Eligible"
+//   }
 
-  // }
-  // let result = alert(checkVotingEligibility())
-  // console.log(result)
+// }
+// let result = alert(checkVotingEligibility())
+// console.log(result)
 
-  
+
 //   function calculateGrade() {
 //     // Return grade based on the marks
 //     let marks = prompt("Enter Your Marks")
@@ -82,4 +82,73 @@
 // let result = alert(isLeapYear())
 // console.log(isLeapYear)
 
+// function trafficLightAction(color) {
+//   // Return "Stop", "Slow Down", or "Go" based on the traffic light color
 
+//   if (color === "Red") {
+//     return "Stop"
+//   } else if (color === "Yellow") {
+//     return "Slow Down"
+//   }else if (color === "Green"){
+//     return "Go"
+//   }else{
+//     return "invalid Color"
+//   }
+// }
+// console.log(trafficLightAction("Red"))
+
+
+// function getDayName() {
+//   let dayName;
+//   let dayNumber = prompt("Enter a Number under 1 - 7")
+//   switch (dayNumber) {
+//     case "1":
+//       dayName = "Monday";
+//       break;
+//     case "2":
+//       dayName = "Tuesday";
+//       break;
+//     case "3":
+//       dayName = "Wednesday";
+//       break;
+//     case "4":
+//       dayName = "Thursday";
+//       break;
+//     case "5":
+//       dayName = "Friday";
+//       break;
+//     case "6":
+//       dayName = "Saturday";
+//       break;
+//     case "7":
+//       dayName = "Sunday";
+//       break;
+//     default:
+//       dayName = "Invalid day";
+//   }
+
+//   return dayName;
+// }
+
+// let result = alert(getDayName())
+// console.log(result)
+
+
+
+function checkNumberType() {
+  // Return "Positive", "Negative", or "Zero" based on the input number
+  let num = prompt("Enter Number : ")
+
+  if(num > 0 ){
+    return "Positive"
+  }else if(num < 0){
+    return "Negative"
+  }else if(num == 0){
+    return "Number Is Zero"
+  }else{
+    return "Not a Number"
+  }
+}
+
+let result = alert(checkNumberType())
+console.log(result)
