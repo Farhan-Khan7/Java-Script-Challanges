@@ -1,26 +1,31 @@
-function checkEvenOdd(num){
-  if(num % 2 === 0){
-    return "Even";
-  }else{
-    return "Odd"
-  }
+// function checkEvenOdd(){
+//   let num = prompt("Enter Number")
+//   if(num % 2 === 0){
+//     return "Even";
+//   }else{
+//     return "Odd"
+//   }
 
-}
-// console.log(prompt(checkEvenOdd()))
+// }
 
-console.alert(checkEvenOdd())
+// let user = alert(checkEvenOdd())
 // console.log(user)
 
 
-// function findLargest(a, b, c) {
-//   // Return the largest among a, b, and c
+function findLargest() {
+  // Return the largest among a, b, and c
 
-//   if(a>=b && a>=c){
-//     return a
-//   }else if(b>=c && b>=a){
-//     return b
-//   }else{
-//     return c
-//   }
-// }
-// console.log(findLargest(5,5,5))
+  let a = prompt("Enter Fisrt num")
+  let b = prompt("Enter Second num")
+  let c = prompt("Enter Third num")
+
+  if(a>=b && a>=c){
+    return `The Largest number is ${a}`
+  }else if(b>=c && b>=a){
+    return `The Largest number is ${b}`
+  }else{
+    return `The Largest number is ${c}`
+  }
+}
+let result = alert(findLargest())
+console.log(result)
