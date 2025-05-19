@@ -76,3 +76,41 @@
 // }
 
 // console.log(workingDays(["monday" , "saturday" , "sunday"]))
+
+// function totalStars(starLevels) {
+//     let count_stars = 0;
+
+//     for(let i=0; i<starLevels.length; i++){
+//         for(let j=0; j<=i; j++){
+//             count_stars++
+//         }
+//     }
+//     return count_stars;
+// }
+
+// console.log(totalStars([["*","*","*"],["*","*"]]))
+// function totalStars(starLevels) {
+//     let count_stars = 0;
+
+//     for (let i = 0; i < starLevels.length; i++) {
+//         count_stars += starLevels[i].length;
+//     }
+
+//     return count_stars;
+// }
+
+// console.log(totalStars([["*","*","*"]])); // Output: 5
+
+
+function totalPrice(prices) {
+
+    let total_cost = 0;
+
+    for(let i=0; i<prices.length; i++){
+        total_cost += prices[i];
+    }
+    return total_cost;
+
+}
+
+console.log(totalPrice([5,10,15]))
