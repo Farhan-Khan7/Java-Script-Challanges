@@ -7,9 +7,18 @@
 
 // console.log(addGuest(["Anirudh","Mukul"]," Radhika"))
 
-function eatCandy(candyJar) {
-    // Remove the last candy from the jar and return the updated jar
-    candyJar.pop()
-    return candyJar;
+// function eatCandy(candyJar) {
+//     // Remove the last candy from the jar and return the updated jar
+//     candyJar.pop()
+//     return candyJar;
+// }
+// console.log(eatCandy(["lolipop" , "Gum" , "Chocolate"]))
+
+// You just need to implement the addPuppy function
+function addPuppy(queue, puppyName) {
+    // Add puppyName at the beginning of queue and return updated queue
+    queue.unshift(puppyName)
+    return queue;
 }
-console.log(eatCandy(["lolipop" , "Gum" , "Chocolate"]))
+
+console.log(addPuppy(["Tom","Jerry","Spike"],"Max"))
