@@ -48,3 +48,25 @@
 //     return items.indexOf("Phone");
 // }
 // console.log(findPhone(["Wallet","Keys","Glasses","Phone"]))
+
+
+// You just need to implement the addVIP function
+// function addVIP(queue, vipGuest) {
+//     // Add vipGuest at the beginning of queue and return updated queue
+//     queue.unshift(vipGuest)
+//     return queue
+// }
+
+// console.log(addVIP(["Aarav","Ishaan","Priyanshi"],"Farhan"))
+
+
+// You just need to implement the countMovies function
+function countMovies(movieList) {
+    // Return the number of movies in the movieList
+    let countMovie = 0
+    for(let i=0; i<movieList.length; i++){
+      countMovie++
+    }
+    return countMovie
+}
+console.log(countMovies(["Jawan","Pahthan","Donkey"]))
