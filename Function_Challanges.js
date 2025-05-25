@@ -10,7 +10,7 @@
 //     }
 // }
 
-// table(2);
+// table(14);
 
 // function AddString(str){
 //     let SumString = '';
@@ -20,7 +20,7 @@
 //     return SumString;
 // }
 
-// console.log(AddString(["F","A","R","H","A","N"]))
+// console.log(AddString(["A","A","F","I","Y","A"]))
 
 // function oddEvenTest(request , n) {
 //     if(request == "odd"){
