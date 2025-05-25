@@ -12,12 +12,43 @@
 
 // table(2);
 
-function AddString(str){
-    let SumString = '';
-    for(let i=0; i<str.length; i++){
-        SumString += str[i];
-    }
-    return SumString;
-}
+// function AddString(str){
+//     let SumString = '';
+//     for(let i=0; i<str.length; i++){
+//         SumString += str[i];
+//     }
+//     return SumString;
+// }
 
-console.log(AddString(["F","A","R","H","A","N"]))
+// console.log(AddString(["F","A","R","H","A","N"]))
+
+// function oddEvenTest(request , n) {
+//     if(request == "odd"){
+//         return function(n){
+//             console.log(n%2 !== 0)
+//         }
+//     } else if(request == "even"){
+//         return function(n){
+//             console.log(n%2 == 0)
+//         }
+//     } else{
+//         console.log("Wrong request")
+//     }
+// }
+
+// console.log(oddEvenTest("odd" ,4))
+
+
+// function getElement(array , num) {
+//     let returnArray = [];
+
+//     for(let i=0; i<array.length; i++){
+//         if(array[i] > num){
+//             returnArray += ` ${array[i]}`;
+//         }
+//     }
+//     return returnArray;
+
+// }
+// console.log(getElement([1,2,3,4,5,6,7,8,9,10], 10))
+
