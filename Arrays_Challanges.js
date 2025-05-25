@@ -61,12 +61,12 @@
 
 
 // You just need to implement the countMovies function
-function countMovies(movieList) {
-    // Return the number of movies in the movieList
-    let countMovie = 0
-    for(let i=0; i<movieList.length; i++){
-      countMovie++
-    }
-    return countMovie
-}
-console.log(countMovies(["Jawan","Pahthan","Donkey"]))
+// function countMovies(movieList) {
+//     // Return the number of movies in the movieList
+//     let countMovie = 0
+//     for(let i=0; i<movieList.length; i++){
+//       countMovie++
+//     }
+//     return countMovie
+// }
+// console.log(countMovies(["Jawan","Pahthan","Donkey"]))
