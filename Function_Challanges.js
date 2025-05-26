@@ -78,4 +78,28 @@
 //     return vowels
 // }
 
-// console.log(countVowels("abcdeghijklmnopqrstu"))
+// console.log(countVowels("ab"))
+
+// function getRandomNumber(start , end){
+//     let randomNumber = Math.floor(Math.random()*(end-start+1)) +start;
+
+//     return randomNumber;
+// }
+
+// console.log(getRandomNumber(10 , 20))
+
+
+// function getlongestCountryName(country) {
+
+//     let longestcountry = ''
+
+//     for(let i=0; i<country.length; i++){
+//         if(country[i].length>longestcountry.length){
+//             longestcountry = country[i]
+//         }
+//     }
+
+//     return longestcountry;
+
+// }
+// console.log(getlongestCountryName(["Australia","Germany Germany Germany Germany","United States of America"]))
