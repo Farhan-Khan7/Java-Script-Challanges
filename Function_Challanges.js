@@ -53,16 +53,29 @@
 // console.log(getElement([1,2,3,4,5,6,7,8,9,10], 10))
 
 
-function getUniqueCharacter(str){
-    let result = "";
+// function getUniqueCharacter(str){
+//     let result = "";
 
-    for(let i=0; i<str.length; i++){
-        if(!result.includes(str[i])){
-            result += str[i]
-        }
-    }
-    return result;
+//     for(let i=0; i<str.length; i++){
+//         if(!result.includes(str[i])){
+//             result += str[i]
+//         }
+//     }
+//     return result;
 
-}
+// }
+// console.log(getUniqueCharacter("aabbbcdefgggh"))
 
-console.log(getUniqueCharacter("aabbbcdefgggh"))
+
+// function countVowels(str){
+    
+//     let vowels = 0;
+//     for(let i=0; i<str.length; i++){
+//         if(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u'){
+//             vowels++;
+//         }
+//     }
+//     return vowels
+// }
+
+// console.log(countVowels("abcdeghijklmnopqrstu"))
