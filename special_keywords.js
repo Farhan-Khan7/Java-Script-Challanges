@@ -27,6 +27,32 @@
 // console.log(id)
 
 
-let square = n => (n*n)
+// let square = n => (n*n)
 
-console.log(square(2))
+// console.log(square(2))
+
+// let h = setInterval (() => {
+//         console.log("Hello World")
+// } , 2000)
+// console.log(h)
+
+// let i = setTimeout(()=> {
+//     clearInterval(h)
+// } , 12000)
+
+// console.log(i)
+
+
+// let ArrayAverage = (n) => {
+//     let add = 0;
+//     for(let i=0; i<n.length; i++){
+//         add += n[i]
+//     }
+//     return (add / n.length)
+// }
+// let n = [1,2,3,4]
+// console.log(ArrayAverage(n))
+
+
+// let isEven = (n) => (n%2 == 0)
+// console.log(isEven(1))
