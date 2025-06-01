@@ -70,3 +70,11 @@
 //     return countMovie
 // }
 // console.log(countMovies(["Jawan","Pahthan","Donkey"]))
+
+// let shoppingList = ["Milk", "Bread", "Eggs", "Butter"];
+
+// shoppingList.forEach(function(item, index) {
+//   console.log(`${index + 1}: Please buy ${item}`);
+// });
+
+

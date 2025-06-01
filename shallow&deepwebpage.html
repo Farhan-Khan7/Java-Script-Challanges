@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shallow vs Deep Copy Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background-color: #f0f8ff; }
+    h1 { color: #222; }
+    button { margin: 10px 5px; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; }
+    .shallow { background-color: #ffc107; }
+    .deep { background-color: #28a745; color: white; }
+    .output { margin-top: 20px; font-size: 1em; white-space: pre-wrap; background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); min-height: 120px; transition: all 1s ease; }
+    .container { display: flex; gap: 20px; flex-wrap: wrap; }
+    .box { flex: 1 1 45%; background: #ffffff; padding: 15px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: relative; transition: transform 1s ease; }
+    .box.transition-active { transform: scale(1.05); }
+    .box h2 { font-size: 1.1rem; margin-bottom: 10px; }
+    code { background: #e8e8e8; padding: 2px 5px; border-radius: 4px; font-size: 0.95em; }
+    .diagram { text-align: center; margin-top: 30px; }
+    .diagram img { max-width: 100%; height: auto; border: 2px solid #ccc; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    .caption { font-style: italic; color: #555; margin-top: 10px; }
+
+    .arrow { position: absolute; width: 60px; height: 2px; background: red; top: 65px; left: 50%; transform: translateX(-50%); animation: flow 1.5s ease-in-out infinite; }
+    .arrow::after { content: ''; position: absolute; right: 0; top: -5px; width: 0; height: 0; border-top: 6px solid transparent; border-bottom: 6px solid transparent; border-left: 10px solid red; }
+    .arrow.green { background: green; }
+    .arrow.green::after { border-left-color: green; }
+    @keyframes flow {
+      0% { transform: translateX(-50%) translateY(0); opacity: 1; }
+      100% { transform: translateX(-50%) translateY(10px); opacity: 0.2; }
+    }
+  </style>
+</head>
+<body>
+  <h1>🧠 Shallow vs Deep Copy - JavaScript Demo with Animation</h1>
+  <p>Click the buttons below to see how values flow in shallow vs deep copy:</p>
+  <div class="container">
+    <div class="box" id="shallowBox">
+      <h2>🔁 Shallow Copy</h2>
+      <div class="arrow" id="shallowArrow" style="display: none;"></div>
+      <button class="shallow" onclick="handleShallowCopy()">Modify Copy (Shallow)</button>
+      <div class="output" id="shallowOutput"></div>
+    </div>
+    <div class="box" id="deepBox">
+      <h2>🧬 Deep Copy</h2>
+      <div class="arrow green" id="deepArrow" style="display: none;"></div>
+      <button class="deep" onclick="handleDeepCopy()">Modify Copy (Deep)</button>
+      <div class="output" id="deepOutput"></div>
+    </div>
+  </div>
+
+  <div class="diagram">
+    <h2>📊 Visual Representation</h2>
+    <img src="https://i.imgur.com/EkpHR1k.png" alt="Shallow vs Deep Copy Diagram">
+    <div class="caption">
+      This diagram shows how references are shared in shallow copy and separated in deep copy. <br>
+      💾 Image link to save: <a href="https://i.imgur.com/EkpHR1k.png" target="_blank">https://i.imgur.com/EkpHR1k.png</a>
+    </div>
+  </div>
+
+  <script>
+    const original = {
+      name: "Farhan",
+      address: { city: "Bhopal" }
+    };
+
+    function handleShallowCopy() {
+      const shallowBox = document.getElementById("shallowBox");
+      shallowBox.classList.add("transition-active");
+      setTimeout(() => shallowBox.classList.remove("transition-active"), 1000);
+
+      const shallow = { ...original };
+      shallow.address.city = "Indore";
+
+      document.getElementById("shallowOutput").innerText = `
+Original Object:
+  name: ${original.name}
+  address.city: ${original.address.city}
+
+Shallow Copy:
+  name: ${shallow.name}
+  address.city: ${shallow.address.city}
+
+🟥 Note: Shallow copy shares reference for nested object.`;
+
+      document.getElementById("shallowArrow").style.display = "block";
+      document.getElementById("deepArrow").style.display = "none";
+    }
+
+    function handleDeepCopy() {
+      const deepBox = document.getElementById("deepBox");
+      deepBox.classList.add("transition-active");
+      setTimeout(() => deepBox.classList.remove("transition-active"), 1000);
+
+      const deep = JSON.parse(JSON.stringify(original));
+      deep.address.city = "Delhi";
+
+      document.getElementById("deepOutput").innerText = `
+Original Object:
+  name: ${original.name}
+  address.city: ${original.address.city}
+
+Deep Copy:
+  name: ${deep.name}
+  address.city: ${deep.address.city}
+
+✅ Note: Deep copy creates a new reference.`;
+
+      document.getElementById("deepArrow").style.display = "block";
+      document.getElementById("shallowArrow").style.display = "none";
+    }
+  </script>
+</body>
+</html>

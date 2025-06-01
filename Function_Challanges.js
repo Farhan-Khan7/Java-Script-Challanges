@@ -9,9 +9,7 @@
 //         console.log(`${tbl} * ${i} = ${tbl*i}`);
 //     }
 // }
-
 // table(14);
-
 // function AddString(str){
 //     let SumString = '';
 //     for(let i=0; i<str.length; i++){
@@ -19,9 +17,7 @@
 //     }
 //     return SumString;
 // }
-
 // console.log(AddString(["A","A","F","I","Y","A"]))
-
 // function oddEvenTest(request , n) {
 //     if(request == "odd"){
 //         return function(n){
@@ -35,71 +31,64 @@
 //         console.log("Wrong request")
 //     }
 // }
-
 // console.log(oddEvenTest("odd" ,4))
+function getElement(array , num) {
+    let returnArray = [];
+
+    for(let i=0; i<array.length; i++){
+        if(array[i] > num){
+            returnArray += ` ${array[i]}`;
+        }
+    }
+    return returnArray;
+}
+console.log(getElement([1,2,3,4,5,6,7,8,9,10], 10))
 
 
-// function getElement(array , num) {
-//     let returnArray = [];
+function getUniqueCharacter(str){
+    let result = "";
+    for(let i=0; i<str.length; i++){
+        if(!result.includes(str[i])){
+            result += str[i]
+        }
+    }
+    return result;
 
-//     for(let i=0; i<array.length; i++){
-//         if(array[i] > num){
-//             returnArray += ` ${array[i]}`;
-//         }
-//     }
-//     return returnArray;
-
-// }
-// console.log(getElement([1,2,3,4,5,6,7,8,9,10], 10))
-
-
-// function getUniqueCharacter(str){
-//     let result = "";
-
-//     for(let i=0; i<str.length; i++){
-//         if(!result.includes(str[i])){
-//             result += str[i]
-//         }
-//     }
-//     return result;
-
-// }
-// console.log(getUniqueCharacter("aabbbcdefgggh"))
+}
+console.log(getUniqueCharacter("aabbbcdefgggh"))
 
 
-// function countVowels(str){
-    
-//     let vowels = 0;
-//     for(let i=0; i<str.length; i++){
-//         if(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u'){
-//             vowels++;
-//         }
-//     }
-//     return vowels
-// }
+function countVowels(str){
+    let vowels = 0;
+    for(let i=0; i<str.length; i++){
+        if(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u'){
+            vowels++;
+        }
+    }
+    return vowels
+}
 
-// console.log(countVowels("ab"))
+console.log(countVowels("ab"))
 
-// function getRandomNumber(start , end){
-//     let randomNumber = Math.floor(Math.random()*(end-start+1)) +start;
+function getRandomNumber(start , end){
+    let randomNumber = Math.floor(Math.random()*(end-start+1)) +start;
 
-//     return randomNumber;
-// }
-
-// console.log(getRandomNumber(10 , 20))
+    return randomNumber;
+}
+console.log(getRandomNumber(10 , 20))
 
 
-// function getlongestCountryName(country) {
+function getlongestCountryName(country) {
 
-//     let longestcountry = ''
+    let longestcountry = ''
 
-//     for(let i=0; i<country.length; i++){
-//         if(country[i].length>longestcountry.length){
-//             longestcountry = country[i]
-//         }
-//     }
+    for(let i=0; i<country.length; i++){
+        if(country[i].length>longestcountry.length){
+            longestcountry = country[i]
+        }
+    }
 
-//     return longestcountry;
+    return longestcountry;
 
-// }
-// console.log(getlongestCountryName(["Australia","Germany Germany Germany Germany","United States of America"]))
+}
+console.log(getlongestCountryName(["Australia","Germany Germany Germany Germany","United States of America"]))
